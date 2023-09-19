@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAYBRARYANG PINOY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" type="text/css" href="bookView.css">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700" rel="stylesheet">
+  <style>
+    @import url('https://db.onlinewebfonts.com/c/b1f909b1cb3adb801a92229ea92613e1?family=Script+MT+Bold');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    /* Move the body styles inside the style tag */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('#');
+      background-size: slide;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #4CAF50;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .container button {
+      width: 100%;
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .container button:hover {
+      background-color: #45a049;
+    }
+
+    .container .message {
+      margin-top: 20px;
+      text-align: center;
+      color: #888;
+    }
+
+    .container .message a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .container .message a:hover {
+      text-decoration: underline;
+    }
+
+    .container .alert {
+      margin-top: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .container .alert.success {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    .container .alert.error {
+      background-color: #f44336;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="title">
+      <a href="#" class="pinoy" style="text-decoration: none">TOME MATE <i class="fas fa-book-open"></i> </a>
+    </nav>
+  </header>
+
+  <!-- HEADER NAVBAR -->
+  <div class="choices" id="choices">
+    <nav class="navbar">
+      <a href="homepage.html" style="text-decoration: none">Home</a>
+      <a href="index.html" style="text-decoration: none">Find Books</a>
+      <a href="b.html" style="text-decoration: none">Categories</a>
+    </nav>
+  </div>
+  <br>
+  <br>
+  <title>Books</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .book-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .book-card {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    .book-image {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .book-title {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .book-description {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    
+    .book-link {
+      display: block;
+      margin-top: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+    
+    .book-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="book-container">
+    <div class="book-card">
+      <img class="book-image" src="GoneGirl.jpg" alt="Book 1">
+      <h2 class="book-title">Gone Girl</h2>
+      <p class="book-description">Gillian Flynn</p>
+      <a class="book-link" href="https://www.amazon.in/Gone-Girl-Gillian-Flynn/dp/0307588378" target="_blank">View on Amazon</a>
+    </div>
+    
+    <div class="book-card">
+      <img class="book-image" src="TheGirlontheTrain.jpg" alt="Book 2">
+      <h2 class="book-title">The Girl on the Train</h2>
+      <p class="book-description">Paula Hawkins</p>
+      <a class="book-link" href="https://www.amazon.in/Girl-Train-Novel-Paula-Hawkins/dp/1594633665" target="_blank">View on Amazon</a>
+    </div>
+    
+    <div class="book-card">
+      <img class="book-image" src="TheDaVinciCode.jpg" alt="Book 3">
+      <h2 class="book-title">The Da Vinci Code</h2>
+      <p class="book-description">Dan Brown</p>
+      <a class="book-link" href="https://www.amazon.in/Da-Vinci-Code-Dan-Brown/dp/0552161276" target="_blank">View on Amazon</a>
+    </div>
+    <div class="book-card">
+      <img class="book-image" src="TheGirlwiththeDragonTatto.jpg" alt="Book 3">
+      <h2 class="book-title">The Girl with the Dragon Tatto</h2>
+      <p class="book-description">Steig Larsson</p>
+      <a class="book-link" href="https://www.amazon.in/Girl-Dragon-Tattoo-Stieg-Larsson/dp/1847245455" target="_blank">View on Amazon</a>
+    </div>
+    <div class="book-card">
+      <img class="book-image" src="AndThenThereWereNone.jpg" alt="Book 3">
+      <h2 class="book-title">And Then There Were None</h2>
+      <p class="book-description">Agatha Christie</p>
+      <a class="book-link" href="https://www.amazon.in/Then-There-Were-None/dp/0062073486
+      " target="_blank">View on Amazon</a>
+    </div>
+
+    <div class="book-card">
+      <img class="book-image" src="TheCuckoo'sCalling.jpg" alt="Book 3">
+      <h2 class="book-title">The Cuckoo's Calling</h2>
+      <p class="book-description">Robert Galbraith</p>
+      <a class="book-link" href="https://www.amazon.in/Cuckoos-Calling-Cormoran-Strike/dp/0751549258" target="_blank">View on Amazon</a>
+    </div>
+
+    <div class="book-card">
+      <img class="book-image" src="TheSilentPatient.jpg" alt="Book 3">
+      <h2 class="book-title">The Silent Patient</h2>
+      <p class="book-description">Alex Michaelides</p>
+      <a class="book-link" href="https://www.amazon.in/Silent-Patient-Alex-Michaelides/dp/1409181634" target="_blank">View on Amazon</a>
+    </div>
+
+    <div class="book-card">
+      <img class="book-image" src="TheNo.1Ladies'DetectiveAgency.jpg" alt="Book 3">
+      <h2 class="book-title">The No.1 Ladies'Detective Agency</h2>
+      <p class="book-description">Alexander McCall Smith</p>
+      <a class="book-link" href="https://www.amazon.in/No-1-Ladies-Detective-Agency/dp/034911675X" target="_blank">View on Amazon</a>
+    </div>
+
+    <div class="book-card">
+      <img class="book-image" src="TheSecretHistory.jpg" alt="Book 3">
+      <h2 class="book-title">The Secret History</h2>
+      <p class="book-description">Donna Tartt</p>
+      <a class="book-link" href="https://www.amazon.in/Secret-History-Donna-Tartt/dp/0140167773" target="_blank">View on Amazon</a>
+    </div>
+
+    <div class="book-card">
+      <img class="book-image" src="TheMalteseFalcon.jpg" alt="Book 3">
+      <h2 class="book-title">The Maltese Falcon</h2>
+      <p class="book-description">Dashiell Hammett</p>
+      <a class="book-link" href="https://www.amazon.in/Maltese-Falcon-Dashiell-Hammett/dp/0752865331" target="_blank">View on Amazon</a>
+    </div>
+    
+    <!-- Add more book cards as needed -->
+  </div>
+ <br>
+  <br>
+  <br>
+  <!-- FOOTER CONTENT -->
+  <section>
+    <footer class="footer">
+      <div class="footerIcons">
+        <a class="footerIcons" style="text-decoration: none">CONTACT US </a>
+        <a class="footerIcons" style="text-decoration: none"><i class="fab fa-facebook"></i></a>
+        <a class="footerIcons" style="text-decoration: none"><i class="fab fa-linkedin"></i></a>
+        <a class="footerIcons" style="text-decoration: none"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </footer>
+  </section>
+
+  <!-- JS LINKS -->
+  <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- MAIN JS -->
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

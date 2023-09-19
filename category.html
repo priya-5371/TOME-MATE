@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Categories</title>
+  <style>
+    body {
+      background-image: url('catbg.jpg'); /* Replace with the path to your background image */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #f2f2f2; /* Replace with the desired background color */
+      font-family: 'Roboto', sans-serif;
+      border: 2px solid #ccc;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .category {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: white;
+      text-align: center;
+    }
+    
+    .category h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .category ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .category li {
+      margin-bottom: 5px;
+    }
+    
+    .book-image {
+      max-width: 200px;
+      max-height: 200px;
+      margin-right: 10px;
+    }
+    
+    .category-link {
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .category-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+  <div class="category">
+    <a href="mystery.html" class="category-link">
+      <h2>Mystery</h2>
+    </a>
+    <ul id="mystery-books">
+    </ul>
+  </div>
+  
+  <div class="category">
+    <a href="Fantasy Books.html" class="category-link">
+      <h2>Fantasy</h2>
+    </a>
+    <ul id="fantasy-books">
+    </ul>
+  </div>
+  
+  <div class="category">
+    <a href="Science Fiction books" class="category-link">
+      <h2>Science Fiction</h2>
+    </a>
+    <ul id="science-fiction-books">
+    </ul>
+  </div>
+  
+  <div class="category">
+    <a href="Romance books" class="category-link">
+      <h2>Romance</h2>
+    </a>
+    <ul id="romance-books">
+    </ul>
+  </div>
+  
+  <script>
+    var books = {
+      "Mystery": ["The Girl with the Dragon Tattoo", "Gone Girl", "The Da Vinci Code"],
+      "Fantasy": ["Harry Potter and the Sorcerer's Stone", "The Lord of the Rings", "A Game of Thrones"],
+      "Science Fiction": ["Dune", "1984", "Ender's Game"],
+      "Romance": ["Pride and Prejudice", "The Notebook", "Outlander"]
+    };
+    
+    function populateCategory(category, books) {
+      var categoryList = document.getElementById(category + "-books");
+      var bookArray = books[category];
+      
+      for (var i = 0; i < bookArray.length; i++) {
+        var book = bookArray[i];
+        var listItem = document.createElement("li");
+        listItem.textContent = book;
+        categoryList.appendChild(listItem);
+        
+        // Add book image
+        var bookImage = document.createElement("img");
+        bookImage.src = "book-placeholder.png"; // Replace with the path to your book image
+        bookImage.alt = book;
+        bookImage.classList.add("book-image");
+        listItem.appendChild(bookImage);
+      }
+    }
+    
+    populateCategory("Mystery", books);
+    populateCategory("Fantasy", books);
+    populateCategory("Science Fiction", books);
+    populateCategory("Romance", books);
+  </script>
+</body>
+</html>
